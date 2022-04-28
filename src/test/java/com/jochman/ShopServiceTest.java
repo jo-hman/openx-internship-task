@@ -75,12 +75,16 @@ public class ShopServiceTest {
         expectedResult.add(users.get(2));
 
         //When
-        List<AppUser> twoFurthestFromEachOtherUsers = shopService.getTwoFurthestUsers();
+        List<AppUser> twoFurthestFromEachOtherUsers = shopService.getTwoFurthestFromEachOtherUsers();
 
         //Then
         assertEquals(expectedResult, twoFurthestFromEachOtherUsers);
     }
 
+    /**
+     * creates example of list of products
+     * @return List of Products
+     */
     private List<Product> generateProductsExample(){
         List<Product> products = new LinkedList<>();
         products.add(new Product(1,
@@ -108,6 +112,10 @@ public class ShopServiceTest {
         return products;
     }
 
+    /**
+     * creates example of list of carts
+     * @return List of Carts
+     */
     private List<Cart> generateCartsExample() {
         List<Cart> carts = new LinkedList<>();
         carts.add(new Cart(1,
@@ -122,6 +130,10 @@ public class ShopServiceTest {
         return carts;
     }
 
+    /**
+     * creates example of list of users
+     * @return List of Users
+     */
     private List<AppUser> generateUsersExample(){
         List<AppUser> users = new LinkedList<>();
         users.add(new AppUser(new Address(

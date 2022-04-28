@@ -7,7 +7,6 @@ import lombok.*;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class Geolocation {
     @JsonProperty("lat")
     private Double latitude;

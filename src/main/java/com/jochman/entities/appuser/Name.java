@@ -6,7 +6,6 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class Name {
     private String firstname;
     private String lastname;

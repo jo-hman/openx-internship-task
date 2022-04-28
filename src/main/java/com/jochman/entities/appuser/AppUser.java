@@ -6,7 +6,6 @@ import lombok.*;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class AppUser {
     private Address address;
     private Integer id;

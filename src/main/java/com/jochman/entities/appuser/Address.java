@@ -6,7 +6,6 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class Address {
     private Geolocation geolocation;
     private String city;

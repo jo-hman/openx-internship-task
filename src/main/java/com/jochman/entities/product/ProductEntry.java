@@ -6,7 +6,6 @@ import lombok.*;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class ProductEntry {
     private Integer productId;
     private Integer quantity;

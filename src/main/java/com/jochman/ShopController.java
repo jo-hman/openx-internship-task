@@ -16,6 +16,7 @@ import java.util.Map;
 @AllArgsConstructor
 @RequestMapping("api/v1/shop")
 public class ShopController {
+
     private final ShopService shopService;
 
     @GetMapping("product-categories-value")
@@ -30,7 +31,7 @@ public class ShopController {
 
     @GetMapping("two-furthest-users")
     public ResponseEntity<List<AppUser>> getTwoFurthestUsers(){
-        return new ResponseEntity<>(shopService.getTwoFurthestUsers(), HttpStatus.OK);
+        return new ResponseEntity<>(shopService.getTwoFurthestFromEachOtherUsers(), HttpStatus.OK);
     }
 
 }
